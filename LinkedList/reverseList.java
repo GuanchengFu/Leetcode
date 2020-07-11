@@ -2,12 +2,6 @@ package LinkedList;
 
 public class reverseList {
 
-    // Leetcode 206
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
 
 
     // Recursion version
@@ -27,7 +21,8 @@ public class reverseList {
 
 
     // Iterate version.
-    /** 注意这里可以将指针挪到null这一项，这样得话可以不用处理特殊情况。*/
+    /** 注意这里可以将指针挪到null这一项，这样得话可以不用处理特殊情况。
+     *  反转链表一般需要3个指针。*/
     public static ListNode solution2(ListNode head) {
         ListNode p1 = null;
         ListNode p2 = head;
